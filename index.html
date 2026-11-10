@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Pocket Arabic</title>
+<meta name="description" content="Privacy policy of Pocket Arabic, the app for learning Arabic as a foreign language — سياسة الخصوصية لتطبيق Pocket Arabic لتعلّم العربية لغير الناطقين بها.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f5fbf'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='serif'%3E%D9%86%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --ink: #1b2333;
+    --muted: #5b6577;
+    --line: #e2e7f0;
+    --primary: #1f5fbf;
+    --primary-soft: #e8f0fc;
+    --ok: #1e7a4c;
+    --ok-soft: #e5f4ec;
+    --no: #9b2c2c;
+    --no-soft: #fbeaea;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(20, 30, 60, .06), 0 6px 24px rgba(20, 30, 60, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10141c;
+      --surface: #181e2a;
+      --ink: #e8ecf4;
+      --muted: #a2acbe;
+      --line: #2a3242;
+      --primary: #7fb0ff;
+      --primary-soft: #1d2a42;
+      --ok: #6fd3a0;
+      --ok-soft: #173327;
+      --no: #f29b9b;
+      --no-soft: #3a1d1f;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.8 "Noto Naskh Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
+  }
+  body[data-lang="en"] {
+    font-family: "Noto Sans", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    line-height: 1.7;
+  }
+  a { color: var(--primary); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero {
+    background: linear-gradient(135deg, #1f5fbf, #3a7be0);
+    color: #fff;
+    padding: 28px 0 64px;
+  }
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.18);
+    display: grid; place-items: center; font-size: 26px; font-family: "Noto Naskh Arabic", serif;
+  }
+  .lang {
+    display: inline-flex; background: rgba(255,255,255,.16); border-radius: 999px; padding: 4px;
+  }
+  .lang button {
+    border: 0; background: transparent; color: #fff; font: inherit; font-size: 14px;
+    padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: #fff; color: #1f5fbf; font-weight: 700; }
+  .hero h1 { margin: 36px 0 8px; font-size: clamp(28px, 6vw, 40px); line-height: 1.3; }
+  .hero p { margin: 0; opacity: .92; max-width: 640px; }
+  .dates { margin-top: 16px; font-size: 14px; opacity: .85; }
+
+  main { margin-top: -40px; padding-bottom: 48px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 24px; margin-bottom: 16px;
+  }
+  .glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .pill {
+    display: flex; gap: 10px; align-items: flex-start; padding: 14px; border-radius: 12px;
+    background: var(--ok-soft); font-size: 15px; line-height: 1.6;
+  }
+  .pill.no { background: var(--no-soft); }
+  .pill b { display: block; }
+  .pill .i { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+    font-size: 14px; font-weight: 700; color: #fff; background: var(--ok); margin-top: 2px; }
+  .pill.no .i { background: var(--no); }
+
+  nav.toc ol { margin: 0; padding-inline-start: 22px; columns: 2 240px; column-gap: 32px; }
+  nav.toc li { margin: 2px 0; break-inside: avoid; }
+  nav.toc ol[data-l="ar"] { list-style: arabic-indic; }
+  nav.toc a { text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+
+  h2 { font-size: 22px; margin: 0 0 12px; line-height: 1.4; scroll-margin-top: 16px; }
+  h2 .n { color: var(--primary); margin-inline-end: 6px; }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-inline-start: 22px; }
+  li { margin: 4px 0; }
+
+  .table { overflow-x: auto; margin: 8px 0 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 520px; }
+  th, td { text-align: start; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--primary-soft); font-weight: 700; }
+  tr:last-child td { border-bottom: 0; }
+
+  .note { background: var(--primary-soft); border-radius: 12px; padding: 14px 16px; margin: 12px 0; }
+  .contact { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  .email { direction: ltr; unicode-bidi: isolate; font-weight: 700; }
+
+  footer { color: var(--muted); font-size: 14px; text-align: center; padding: 8px 0 40px; }
+
+  [data-l] { display: none; }
+  body[data-lang="ar"] [data-l="ar"], body[data-lang="en"] [data-l="en"] { display: revert; }
+
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .card { padding: 18px; }
+  }
+  @media print {
+    header.hero { background: none; color: #000; padding: 0; }
+    .lang, nav.toc { display: none; }
+    main { margin: 0; }
+    .card { box-shadow: none; border: 0; padding: 0 0 12px; }
+    body { background: #fff; color: #000; }
+  }
+</style>
+</head>
+<body data-lang="en">
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><span class="mark" aria-hidden="true">ع</span><span>Pocket Arabic</span></div>
+      <div class="lang" role="group" aria-label="Language / اللغة">
+        <button type="button" data-set="ar" aria-pressed="true">العربية</button>
+        <button type="button" data-set="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+    <h1 data-l="ar">سياسة الخصوصية</h1>
+    <h1 data-l="en">Privacy Policy</h1>
+    <p data-l="ar">نحترم خصوصيتك وخصوصية أطفالك. تشرح هذه الصفحة بلغة واضحة ما الذي يجمعه تطبيق Pocket Arabic لتعلّم العربية لغير الناطقين بها، ولماذا، وما الذي لا يجمعه أبدًا.</p>
+    <p data-l="en">We respect your privacy and your children's. This page explains, in plain language, what the Pocket Arabic app for learning Arabic as a foreign language collects, why, and what it never collects.</p>
+    <div class="dates">
+      <span data-l="ar">تاريخ السريان: ١٠ نوفمبر ٢٠٢٦ · آخر تحديث: ١٠ نوفمبر ٢٠٢٦</span>
+      <span data-l="en">Effective: 10 November 2026 · Last updated: 10 November 2026</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card" aria-labelledby="glance">
+    <h2 id="glance" data-l="ar">باختصار</h2>
+    <h2 id="glance-en" data-l="en">At a glance</h2>
+    <div class="glance">
+      <div class="pill no"><span class="i">✕</span><div data-l="ar"><b>لا إعلانات</b>لا يعرض التطبيق إعلانات ولا يشارك بياناتك مع شبكات إعلانية.</div><div data-l="en"><b>No ads</b>The app shows no ads and shares nothing with ad networks.</div></div>
+      <div class="pill no"><span class="i">✕</span><div data-l="ar"><b>لا حسابات</b>لا تسجيل دخول، ولا بريد إلكتروني، ولا رقم هاتف.</div><div data-l="en"><b>No accounts</b>No sign-in, no email address, no phone number.</div></div>
+      <div class="pill no"><span class="i">✕</span><div data-l="ar"><b>لا معرّف إعلاني ولا موقع</b>لا نجمع المعرّف الإعلاني ولا موقع الجهاز (GPS).</div><div data-l="en"><b>No ad ID, no location</b>We do not collect the advertising ID or device (GPS) location.</div></div>
+      <div class="pill"><span class="i">✓</span><div data-l="ar"><b>بياناتك على جهازك</b>الاسم أو اللقب والتقدّم والإعدادات تُحفظ على جهازك فقط.</div><div data-l="en"><b>Your data stays on your device</b>Your name or nickname, progress and settings are stored only on your device.</div></div>
+      <div class="pill"><span class="i">✓</span><div data-l="ar"><b>إحصاءات استخدام محدودة</b>نستخدم Google Analytics for Firebase لمعرفة الدروس الأكثر استخدامًا وتحسين التطبيق، دون اسم أو إجابات.</div><div data-l="en"><b>Limited usage statistics</b>We use Google Analytics for Firebase to learn which lessons are used and improve the app — never names or answers.</div></div>
+      <div class="pill"><span class="i">✓</span><div data-l="ar"><b>الدفع عبر Google Play</b>تتم الاشتراكات بالكامل عبر Google Play؛ لا نرى بيانات بطاقتك.</div><div data-l="en"><b>Payments by Google Play</b>Subscriptions are handled entirely by Google Play; we never see your card details.</div></div>
+    </div>
+  </section>
+
+  <nav class="card toc" aria-label="Contents">
+    <ol data-l="ar">
+      <li><a href="#s1">من نحن</a></li>
+      <li><a href="#s2">البيانات المحفوظة على جهازك</a></li>
+      <li><a href="#s3">إحصاءات الاستخدام</a></li>
+      <li><a href="#s4">الاشتراكات والمدفوعات</a></li>
+      <li><a href="#s5">التذكير اليومي والأذونات</a></li>
+      <li><a href="#s6">النسخ الاحتياطي</a></li>
+      <li><a href="#s7">ما لا نجمعه أبدًا</a></li>
+      <li><a href="#s8">خصوصية الأطفال</a></li>
+      <li><a href="#s9">مشاركة البيانات</a></li>
+      <li><a href="#s10">مدة الاحتفاظ والأمان</a></li>
+      <li><a href="#s11">حقوقك وخياراتك</a></li>
+      <li><a href="#s12">التغييرات على هذه السياسة</a></li>
+      <li><a href="#s13">تواصل معنا</a></li>
+    </ol>
+    <ol data-l="en">
+      <li><a href="#s1">Who we are</a></li>
+      <li><a href="#s2">Data stored on your device</a></li>
+      <li><a href="#s3">Usage statistics</a></li>
+      <li><a href="#s4">Subscriptions and payments</a></li>
+      <li><a href="#s5">Daily reminder and permissions</a></li>
+      <li><a href="#s6">Backup</a></li>
+      <li><a href="#s7">What we never collect</a></li>
+      <li><a href="#s8">Children's privacy</a></li>
+      <li><a href="#s9">Sharing</a></li>
+      <li><a href="#s10">Retention and security</a></li>
+      <li><a href="#s11">Your rights and choices</a></li>
+      <li><a href="#s12">Changes to this policy</a></li>
+      <li><a href="#s13">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section class="card" id="s1">
+    <h2><span class="n">١.</span><span data-l="ar">من نحن</span><span data-l="en">Who we are</span></h2>
+    <p data-l="ar">Pocket Arabic تطبيق لتعليم العربية لغير الناطقين بها: الحروف والحركات والقراءة ثم الكلمات والجمل، بدروس قصيرة وتمارين تفاعلية وصوت، مناسب للمتعلّمين في كل الأعمار ومنهم الأطفال. يطوّره ويديره Ahmed Orabi («نحن»)، وهو المسؤول عن البيانات الموصوفة هنا. تنطبق هذه السياسة على تطبيق Pocket Arabic لنظام Android (com.ora.afl).</p>
+    <p data-l="en">Pocket Arabic is an app that teaches Arabic to non-native speakers — letters, vowels and reading, then words and sentences — through short lessons, interactive exercises and audio, suitable for learners of every age, including children. It is developed and operated by Ahmed Orabi ("we", "us"), who is responsible for the data described here. This policy applies to the Pocket Arabic app for Android (com.ora.afl).</p>
+  </section>
+
+  <section class="card" id="s2">
+    <h2><span class="n">٢.</span><span data-l="ar">البيانات المحفوظة على جهازك</span><span data-l="en">Data stored on your device</span></h2>
+    <p data-l="ar">ليُكمل التطبيق عمله، يحفظ ما يلي <b>على جهازك</b>. لا يصلنا شيء منه، باستثناء رموز الدروس والإعدادات العامة التي تُحسب ضمن إحصاءات الاستخدام الموصوفة في القسم ٣:</p>
+    <p data-l="en">So the app can work, it keeps the following <b>on your device</b>. None of it is sent to us, except lesson codes and general settings counted in the usage statistics described in section 3:</p>
+    <ul data-l="ar">
+      <li>الاسم أو اللقب الذي تختاره (اختياري) ولون الصورة الرمزية.</li>
+      <li>تقدّمك في الدروس والتدريب، والنقاط والنجوم وسلسلة الأيام، والمراجعات.</li>
+      <li>إعداداتك: لغة التطبيق، والمظهر، والأصوات والحركة، ووقت التذكير اليومي.</li>
+      <li>حالة اشتراكك كما أبلغ عنها Google Play.</li>
+    </ul>
+    <ul data-l="en">
+      <li>The name or nickname you choose (optional) and your avatar colour.</li>
+      <li>Your lesson and practice progress, points, stars and streak, and review items.</li>
+      <li>Your settings: app language, theme, sound and motion, and daily reminder time.</li>
+      <li>Your subscription status as reported by Google Play.</li>
+    </ul>
+    <p data-l="ar">إجاباتك في التمارين تُستخدم داخل التطبيق لتصحيحها وجدولة المراجعة، ولا تغادر جهازك.</p>
+    <p data-l="en">Your exercise answers are used inside the app to check them and schedule reviews; they never leave your device.</p>
+  </section>
+
+  <section class="card" id="s3">
+    <h2><span class="n">٣.</span><span data-l="ar">إحصاءات الاستخدام</span><span data-l="en">Usage statistics</span></h2>
+    <p data-l="ar">نستخدم <b>Google Analytics for Firebase</b> (من Google) لفهم كيفية استخدام التطبيق: أي الدروس تُفتح وتُكمل، وأين يتوقّف المتعلّمون، وأي الإعدادات تُستعمل، حتى نحسّن الدروس ونُصلح المشكلات.</p>
+    <p data-l="en">We use <b>Google Analytics for Firebase</b> (by Google) to understand how the app is used — which lessons are opened and finished, where learners stop, which settings are used — so we can improve the lessons and fix problems.</p>
+    <div class="table">
+      <table data-l="ar">
+        <thead><tr><th>ما يُرسَل</th><th>أمثلة</th></tr></thead>
+        <tbody>
+          <tr><td>أحداث الاستخدام داخل التطبيق</td><td>فتح شاشة، بدء درس أو إنهاؤه أو إعادته (برمز الدرس)، إكمال خطوات الإعداد الأولى، تغيير إعداد.</td></tr>
+          <tr><td>الإعدادات العامة</td><td>لغة التطبيق، المظهر، تشغيل الأصوات أو الحركة أو التذكير ووقته.</td></tr>
+          <tr><td>خطوات الاشتراك</td><td>فتح صفحة الاشتراك، اختيار خطة شهرية أو سنوية، نجاح الشراء أو إلغاؤه أو استعادته (دون أي بيانات دفع).</td></tr>
+          <tr><td>معلومات تقنية تجمعها Firebase تلقائيًا</td><td>معرّف عشوائي لنسخة التطبيق على الجهاز (ليس معرّفًا إعلانيًا)، طراز الجهاز ونظامه، إصدار التطبيق، اللغة، والمنطقة التقريبية (البلد/المدينة) المستنتجة من عنوان IP. لا تحتفظ Google Analytics بعنوان IP نفسه.</td></tr>
+        </tbody>
+      </table>
+      <table data-l="en">
+        <thead><tr><th>What is sent</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>In-app usage events</td><td>A screen opened; a lesson started, finished or restarted (with the lesson code); first-run setup steps completed; a setting changed.</td></tr>
+          <tr><td>General settings</td><td>App language, theme, whether sounds, motion and the reminder are on, and the reminder time.</td></tr>
+          <tr><td>Subscription steps</td><td>The subscription page opened, a monthly or yearly plan selected, a purchase completed, cancelled or restored (no payment details).</td></tr>
+          <tr><td>Technical information Firebase collects automatically</td><td>A random app-instance identifier (not an advertising ID), device model and OS version, app version, language, and approximate region (country/city) derived from the IP address. Google Analytics does not store the IP address itself.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p data-l="ar"><b>لا تُرسَل أبدًا</b>: الاسم أو اللقب، إجابات التمارين، نصوص البحث، إجابات بوابة الوالدين، رموز الشراء أو بيانات الدفع. ولم نُفعّل المعرّف الإعلاني، ولا تخصيص الإعلانات، ولا Google Signals.</p>
+    <p data-l="en"><b>Never sent</b>: your name or nickname, exercise answers, searches, parental-gate answers, purchase tokens or payment details. The advertising ID, ad personalisation and Google Signals are all turned off.</p>
+    <p data-l="ar">تعالج Google هذه البيانات نيابةً عنّا وفق <a href="https://policies.google.com/privacy" rel="noopener">سياسة خصوصية Google</a> و<a href="https://firebase.google.com/support/privacy" rel="noopener">شروط الخصوصية في Firebase</a>.</p>
+    <p data-l="en">Google processes this data on our behalf under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy terms</a>.</p>
+  </section>
+
+  <section class="card" id="s4">
+    <h2><span class="n">٤.</span><span data-l="ar">الاشتراكات والمدفوعات</span><span data-l="en">Subscriptions and payments</span></h2>
+    <p data-l="ar">الاشتراك المميّز اختياري، ويُشترى ويُدار بالكامل عبر <b>Google Play</b>. تتعامل Google مع بيانات الدفع وحسابك وفق <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">إشعار خصوصية Google Payments</a>. لا نتلقّى رقم بطاقتك ولا عنوانك. يسأل التطبيق Google Play فقط عمّا إذا كان الاشتراك فعّالًا، ويحفظ النتيجة على جهازك.</p>
+    <p data-l="en">The premium subscription is optional and is bought and managed entirely through <b>Google Play</b>. Google handles payment and account data under the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a>. We never receive your card number or address. The app only asks Google Play whether a subscription is active and stores the answer on your device.</p>
+    <p data-l="ar">الشراء وإدارة الاشتراك وفتح أي رابط خارجي محمية ببوابة للوالدين، حتى لا يقوم بها الطفل وحده.</p>
+    <p data-l="en">Buying, managing a subscription and opening any outside link are protected by a parental gate, so a child cannot do them alone.</p>
+  </section>
+
+  <section class="card" id="s5">
+    <h2><span class="n">٥.</span><span data-l="ar">التذكير اليومي والأذونات</span><span data-l="en">Daily reminder and permissions</span></h2>
+    <ul data-l="ar">
+      <li><b>الإشعارات</b>: إذا فعّلت التذكير اليومي، يطلب التطبيق إذن الإشعارات ويجدول التذكير على جهازك. لا يُرسَل أي شيء من خادم؛ ويمكنك إيقافه من الإعدادات في أي وقت.</li>
+      <li><b>التشغيل بعد إعادة التشغيل</b>: ليبقى التذكير في موعده بعد إعادة تشغيل الهاتف.</li>
+      <li><b>الإنترنت</b>: لإحصاءات الاستخدام وGoogle Play فقط. الدروس وأصواتها كلها داخل التطبيق.</li>
+    </ul>
+    <ul data-l="en">
+      <li><b>Notifications</b>: if you turn on the daily reminder, the app asks for notification permission and schedules the reminder on your device. Nothing is pushed from a server, and you can turn it off in Settings at any time.</li>
+      <li><b>Run at start-up</b>: so the reminder keeps its time after the phone restarts.</li>
+      <li><b>Internet</b>: only for usage statistics and Google Play. All lessons and their audio are inside the app.</li>
+    </ul>
+    <p data-l="ar">لا يطلب التطبيق الوصول إلى الكاميرا أو الميكروفون أو جهات الاتصال أو الصور أو الموقع.</p>
+    <p data-l="en">The app does not ask for the camera, microphone, contacts, photos or location.</p>
+    <p data-l="ar">في تمارين النطق تقول الكلمة بصوتك ثم تقيّم نفسك؛ لا يستمع التطبيق إليك ولا يسجّل صوتك.</p>
+    <p data-l="en">In speaking exercises you say the word aloud and rate yourself; the app does not listen to or record your voice.</p>
+  </section>
+
+  <section class="card" id="s6">
+    <h2><span class="n">٦.</span><span data-l="ar">النسخ الاحتياطي</span><span data-l="en">Backup</span></h2>
+    <p data-l="ar">إذا كان النسخ الاحتياطي من Google مفعّلًا على هاتفك، ينسخ Android تقدّمك وإعداداتك إلى حسابك في Google حتى تعود إليك عند إعادة التثبيت أو على هاتف جديد. تتم هذه النسخة بين جهازك وحسابك في Google، ولا نصل إليها. يمكنك إيقافها من إعدادات Android (النظام ← النسخ الاحتياطي).</p>
+    <p data-l="en">If Google backup is turned on for your phone, Android copies your progress and settings to your Google account so they come back after a reinstall or on a new phone. This backup is between your device and your Google account; we cannot access it. You can turn it off in Android settings (System → Backup).</p>
+  </section>
+
+  <section class="card" id="s7">
+    <h2><span class="n">٧.</span><span data-l="ar">ما لا نجمعه أبدًا</span><span data-l="en">What we never collect</span></h2>
+    <ul data-l="ar">
+      <li>الاسم الحقيقي الكامل، أو البريد الإلكتروني، أو رقم الهاتف، أو العنوان.</li>
+      <li>الموقع الدقيق (GPS)، أو جهات الاتصال، أو الصور، أو التسجيلات الصوتية.</li>
+      <li>المعرّف الإعلاني، أو أي بيانات لأغراض الإعلانات أو التتبّع عبر التطبيقات.</li>
+      <li>بيانات البطاقات أو الدفع.</li>
+    </ul>
+    <ul data-l="en">
+      <li>Full real name, email address, phone number or postal address.</li>
+      <li>Precise (GPS) location, contacts, photos or voice recordings.</li>
+      <li>The advertising ID, or any data for advertising or cross-app tracking.</li>
+      <li>Card or payment details.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="s8">
+    <h2><span class="n">٨.</span><span data-l="ar">خصوصية الأطفال</span><span data-l="en">Children's privacy</span></h2>
+    <p data-l="ar">التطبيق موجّه إلى المتعلّمين من كل الأعمار، ومنهم الأطفال. ولأنه لا يسأل عن العمر، يحصل كل مستخدم على الحمايات نفسها المصمّمة للأطفال، ونلتزم <a href="https://support.google.com/googleplay/android-developer/answer/9893335" rel="noopener">سياسة العائلات في Google Play</a>:</p>
+    <p data-l="en">The app is for learners of all ages, including children. Because it never asks for a user's age, every user gets the same protections designed for children, and we follow the <a href="https://support.google.com/googleplay/android-developer/answer/9893335" rel="noopener">Google Play Families Policy</a>:</p>
+    <ul data-l="ar">
+      <li>لا إعلانات، ولا معرّف إعلاني، ولا مشاركة بيانات لأغراض إعلانية.</li>
+      <li>لا حسابات ولا محادثات ولا أي طريقة يتواصل بها الطفل مع الغرباء.</li>
+      <li>لا نطلب من الطفل معلومات شخصية؛ والاسم أو اللقب اختياري ويبقى على الجهاز.</li>
+      <li>الشراء والروابط الخارجية خلف بوابة للوالدين.</li>
+      <li>إحصاءات الاستخدام محصورة في ما هو موصوف في القسم ٣، لتحسين التطبيق فقط.</li>
+    </ul>
+    <ul data-l="en">
+      <li>No ads, no advertising ID, and no data sharing for advertising.</li>
+      <li>No accounts, no chat, and no way for a child to contact strangers.</li>
+      <li>We do not ask a child for personal information; the name or nickname is optional and stays on the device.</li>
+      <li>Purchases and outside links are behind a parental gate.</li>
+      <li>Usage statistics are limited to what section 3 describes, and used only to improve the app.</li>
+    </ul>
+    <p data-l="ar">إذا كنت وليّ أمر وتريد حذف أي بيانات تتعلّق بطفلك، راسلنا (القسم ١٣) وسنستجيب بسرعة.</p>
+    <p data-l="en">If you are a parent or guardian and want any data relating to your child deleted, email us (section 13) and we will act promptly.</p>
+  </section>
+
+  <section class="card" id="s9">
+    <h2><span class="n">٩.</span><span data-l="ar">مشاركة البيانات</span><span data-l="en">Sharing</span></h2>
+    <p data-l="ar">لا نبيع بياناتك ولا نؤجّرها ولا نشاركها لأغراض إعلانية. الجهات الوحيدة التي تتعامل مع بيانات من التطبيق هي:</p>
+    <p data-l="en">We do not sell, rent or share your data for advertising. The only parties that handle any data from the app are:</p>
+    <ul data-l="ar">
+      <li><b>Google (Firebase)</b>: معالجة إحصاءات الاستخدام نيابةً عنّا.</li>
+      <li><b>Google Play</b>: الشراء والفوترة وإدارة الاشتراك.</li>
+      <li><b>الجهات المختصة</b>: فقط إذا ألزمنا القانون بذلك.</li>
+    </ul>
+    <ul data-l="en">
+      <li><b>Google (Firebase)</b>: processes usage statistics on our behalf.</li>
+      <li><b>Google Play</b>: purchases, billing and subscription management.</li>
+      <li><b>Authorities</b>: only when the law requires it.</li>
+    </ul>
+    <p data-l="ar">قد تُعالَج البيانات على خوادم Google خارج بلدك، مع ضمانات الحماية التي توفّرها Google.</p>
+    <p data-l="en">Data may be processed on Google servers outside your country, under the safeguards Google provides.</p>
+  </section>
+
+  <section class="card" id="s10">
+    <h2><span class="n">١٠.</span><span data-l="ar">مدة الاحتفاظ والأمان</span><span data-l="en">Retention and security</span></h2>
+    <ul data-l="ar">
+      <li><b>على جهازك</b>: تبقى البيانات حتى تحذفها أو تحذف التطبيق.</li>
+      <li><b>إحصاءات الاستخدام</b>: تُحذف بيانات الأحداث المرتبطة بمعرّف نسخة التطبيق تلقائيًا بعد ١٤ شهرًا على الأكثر؛ أما التقارير المجمّعة التي لا تحدّد أحدًا فقد تبقى أطول.</li>
+      <li>الاتصال بخدمات Google مشفّر (HTTPS)، ولا نملك خوادم خاصة تخزّن بياناتك.</li>
+    </ul>
+    <ul data-l="en">
+      <li><b>On your device</b>: data stays until you clear it or uninstall the app.</li>
+      <li><b>Usage statistics</b>: event data linked to the app-instance identifier is deleted automatically after at most 14 months; aggregated reports that identify no one may be kept longer.</li>
+      <li>Connections to Google services are encrypted (HTTPS), and we run no servers of our own that store your data.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="s11">
+    <h2><span class="n">١١.</span><span data-l="ar">حقوقك وخياراتك</span><span data-l="en">Your rights and choices</span></h2>
+    <ul data-l="ar">
+      <li><b>حذف بيانات الجهاز</b>: من إعدادات Android ← التطبيقات ← Pocket Arabic ← التخزين ← مسح البيانات، أو بحذف التطبيق.</li>
+      <li><b>حذف إحصاءات الاستخدام أو الاطلاع عليها</b>: راسلنا وسنطلب من Google حذف البيانات المرتبطة بنسخة تطبيقك. ولأننا لا نعرف هويتك، قد نطلب منك خطوات بسيطة لتحديد نسختك.</li>
+      <li><b>الإشعارات والنسخ الاحتياطي</b>: يمكنك إيقافهما في أي وقت من إعدادات التطبيق أو Android.</li>
+      <li>بحسب مكان إقامتك (مثل الاتحاد الأوروبي أو المملكة المتحدة أو كاليفورنيا) قد تكون لك حقوق إضافية في الاطلاع والتصحيح والحذف والاعتراض والشكوى إلى جهة حماية البيانات؛ وسنحترمها.</li>
+    </ul>
+    <ul data-l="en">
+      <li><b>Delete device data</b>: Android Settings → Apps → Pocket Arabic → Storage → Clear data, or uninstall the app.</li>
+      <li><b>Access or delete usage statistics</b>: email us and we will ask Google to delete the data linked to your app instance. Because we don't know who you are, we may ask you for simple steps to identify your installation.</li>
+      <li><b>Notifications and backup</b>: you can turn them off at any time in the app or in Android settings.</li>
+      <li>Depending on where you live (for example the EU, the UK or California), you may have further rights to access, correct, delete, object, and complain to a data protection authority; we will honour them.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="s12">
+    <h2><span class="n">١٢.</span><span data-l="ar">التغييرات على هذه السياسة</span><span data-l="en">Changes to this policy</span></h2>
+    <p data-l="ar">إذا غيّرنا طريقة تعاملنا مع البيانات، سنحدّث هذه الصفحة وتاريخ «آخر تحديث» أعلاه قبل أن يسري التغيير، وسننبّه داخل التطبيق إلى أي تغيير جوهري.</p>
+    <p data-l="en">If we change how we handle data, we will update this page and the "Last updated" date above before the change takes effect, and point out any significant change inside the app.</p>
+  </section>
+
+  <section class="card" id="s13">
+    <h2><span class="n">١٣.</span><span data-l="ar">تواصل معنا</span><span data-l="en">Contact us</span></h2>
+    <p data-l="ar">لأي سؤال عن الخصوصية أو طلب حذف:</p>
+    <p data-l="en">For any privacy question or deletion request:</p>
+    <div class="note contact">
+      <span>Ahmed Orabi</span>
+      <a class="email" href="mailto:ahmed.m.orabi@gmail.com?subject=Pocket%20Arabic%20privacy">ahmed.m.orabi@gmail.com</a>
+    </div>
+    <p data-l="ar">نردّ عادةً خلال ٣٠ يومًا على الأكثر.</p>
+    <p data-l="en">We usually reply within 30 days at most.</p>
+  </section>
+
+</main>
+
+<footer>
+  <span data-l="ar">جميع الحقوق محفوظة © ٢٠٢٦ Ahmed Orabi</span>
+  <span data-l="en">© 2026 Ahmed Orabi. All rights reserved.</span>
+</footer>
+
+<script>
+  (function () {
+    var body = document.body;
+    function set(lang, remember) {
+      body.dataset.lang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.title = lang === 'ar' ? 'سياسة الخصوصية · Pocket Arabic' : 'Privacy Policy · Pocket Arabic';
+      document.querySelectorAll('[data-set]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.set === lang));
+      });
+      document.querySelectorAll('h2 .n').forEach(function (n, i) {
+        n.textContent = (lang === 'ar' ? (i + 1).toLocaleString('ar-EG') : String(i + 1)) + '.';
+      });
+      if (remember) {
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+        history.replaceState(null, '', '?lang=' + lang + location.hash);
+      }
+    }
+    document.querySelectorAll('[data-set]').forEach(function (b) {
+      b.addEventListener('click', function () { set(b.dataset.set, true); });
+    });
+    var q = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var nav = (navigator.language || 'en').slice(0, 2);
+    set(q === 'en' || q === 'ar' ? q : saved || (nav === 'ar' ? 'ar' : 'en'), false);
+  })();
+</script>
+</body>
+</html>
