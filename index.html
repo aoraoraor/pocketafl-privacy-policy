@@ -150,8 +150,8 @@
     <p data-l="ar">نحترم خصوصيتك وخصوصية أطفالك. تشرح هذه الصفحة بلغة واضحة ما الذي يجمعه تطبيق Pocket Arabic لتعلّم العربية لغير الناطقين بها، ولماذا، وما الذي لا يجمعه أبدًا.</p>
     <p data-l="en">We respect your privacy and your children's. This page explains, in plain language, what the Pocket Arabic app for learning Arabic as a foreign language collects, why, and what it never collects.</p>
     <div class="dates">
-      <span data-l="ar">تاريخ السريان: ١٠ نوفمبر ٢٠٢٦ · آخر تحديث: ١٠ نوفمبر ٢٠٢٦</span>
-      <span data-l="en">Effective: 10 November 2026 · Last updated: 10 November 2026</span>
+      <span data-l="ar">تاريخ السريان: ١٠ نوفمبر ٢٠٢٦ · آخر تحديث: ١٥ نوفمبر ٢٠٢٦</span>
+      <span data-l="en">Effective: 10 November 2026 · Last updated: 15 November 2026</span>
     </div>
   </div>
 </header>
@@ -262,8 +262,30 @@
 
   <section class="card" id="s4">
     <h2><span class="n">٤.</span><span data-l="ar">الاشتراكات والمدفوعات</span><span data-l="en">Subscriptions and payments</span></h2>
-    <p data-l="ar">الاشتراك المميّز اختياري، ويُشترى ويُدار بالكامل عبر <b>Google Play</b>. تتعامل Google مع بيانات الدفع وحسابك وفق <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">إشعار خصوصية Google Payments</a>. لا نتلقّى رقم بطاقتك ولا عنوانك. يسأل التطبيق Google Play فقط عمّا إذا كان الاشتراك فعّالًا، ويحفظ النتيجة على جهازك.</p>
-    <p data-l="en">The premium subscription is optional and is bought and managed entirely through <b>Google Play</b>. Google handles payment and account data under the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a>. We never receive your card number or address. The app only asks Google Play whether a subscription is active and stores the answer on your device.</p>
+    <p data-l="ar">الاشتراك المميّز اختياري، ويُشترى ويُدار بالكامل عبر <b>Google Play</b>. تتعامل Google مع بيانات الدفع وحسابك وفق <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">إشعار خصوصية Google Payments</a>. لا نتلقّى رقم بطاقتك ولا عنوانك. يسأل التطبيق Google Play عمّا إذا كان الاشتراك فعّالًا، ويحفظ النتيجة على جهازك.</p>
+    <p data-l="en">The premium subscription is optional and is bought and managed entirely through <b>Google Play</b>. Google handles payment and account data under the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a>. We never receive your card number or address. The app asks Google Play whether a subscription is active and stores the answer on your device.</p>
+    <h3 data-l="ar">الدروس المميزة وخادم الدروس</h3>
+    <h3 data-l="en">Premium lessons and our lesson server</h3>
+    <p data-l="ar">قد يُنزّل التطبيق الدروس المميزة للمشتركين من خادم الدروس الخاص بنا (يعمل على <b>Cloudflare</b>). وللتأكد من أن الدروس تصل إلى المشتركين الحقيقيين على هواتف سليمة فقط، يرسل التطبيق إلى الخادم ما يلي فقط:</p>
+    <ul data-l="ar">
+      <li><b>رمز الشراء من Google Play</b>: رمز تصدره Google Play يدلّ على عملية الاشتراك، لا على شخصك. يستخدمه الخادم فقط ليسأل Google Play عن حالة الاشتراك، ثم لا يحفظ منه إلا بصمة أحادية الاتجاه لا يمكن استرجاع الرمز منها.</li>
+      <li><b>مفتاحَي أمان عامّين</b> يُنشئهما التطبيق على هاتفك (يبقى الجزء السرّي منهما في الهاتف ولا يغادره أبدًا)، ومنهما يُشتقّ رمز التثبيت.</li>
+      <li><b>نتيجة فحص Google Play Integrity</b> التي تؤكد أن التطبيق أصلي وأن الهاتف سليم، وتقدّمها Google وفق <a href="https://policies.google.com/privacy" rel="noopener">سياسة الخصوصية الخاصة بها</a>.</li>
+    </ul>
+    <p data-l="en">The app may download premium lessons for subscribers from our own lesson server (run on <b>Cloudflare</b>). To make sure lessons reach only real subscribers on genuine phones, the app sends the server only:</p>
+    <ul data-l="en">
+      <li><b>Your Google Play purchase token</b>: a code issued by Google Play that identifies the subscription purchase, not you. The server uses it only to ask Google Play about the subscription's status, and keeps nothing of it but a one-way fingerprint from which the token cannot be recovered.</li>
+      <li><b>Two public security keys</b> that the app creates on your phone (their secret halves never leave the phone). The install code is derived from them.</li>
+      <li><b>The result of a Google Play Integrity check</b>, which confirms the app is genuine and the phone is sound. Google provides it under <a href="https://policies.google.com/privacy" rel="noopener">its own privacy policy</a>.</li>
+    </ul>
+    <p data-l="ar">ويُبلغ Google Play الخادمَ أيضًا عند تجديد الاشتراك أو إلغائه أو استرداد ثمنه، حتى تبقى حالته صحيحة.</p>
+    <p data-l="en">Google Play also tells the server when the subscription is renewed, cancelled or refunded, so its status stays correct.</p>
+    <p data-l="ar"><b>ما يحفظه الخادم</b>: رمز التثبيت والمفتاحين العامّين، وبصمة الشراء، وحالة الاشتراك وخطته وتاريخ انتهائه، ومستوى سلامة الهاتف كما أفاد به فحص Google (مثلًا: قوي أو أساسي)، ورمز العلامة المائية (انظر أدناه)، وعدّادات قصيرة العمر تحدّ من سرعة تنزيل الدروس، والأحداث غير المعتادة (مثل طلب مرفوض)، وقائمة بما حُظر من تثبيتات أو اشتراكات. أما الملخّصات الأسبوعية لرصد إساءة الاستخدام فلا تحتوي إلا على البصمات، دون أي رمز أو بيانات أخرى.</p>
+    <p data-l="en"><b>What the server keeps</b>: the install code and the two public keys, the purchase fingerprint, the subscription's status, plan and end date, the phone's integrity level as reported by Google's check (for example, strong or basic), a watermark code (see below), short-lived counters that limit how fast lessons can be downloaded, unusual events (for example, a refused request) and a list of blocked installs or subscriptions. Weekly summaries used to spot abuse contain only fingerprints, never tokens or other details.</p>
+    <p data-l="ar"><b>العلامة المائية</b>: يحمل كل درس مُنزَّل علامة غير مرئية مرتبطة بالتثبيت. إذا نُسخت الدروس ونُشرت خارج التطبيق، تتيح لنا هذه العلامة معرفة التثبيت والاشتراك اللذين نُسخت منهما، وقد نحظرهما. ولا تكشف العلامة عن هويتك.</p>
+    <p data-l="en"><b>Watermark</b>: every downloaded lesson carries an invisible mark linked to the install. If lessons are copied and shared outside the app, the mark lets us find the install and subscription they came from, and we may block them. The mark does not reveal who you are.</p>
+    <p data-l="ar">لا يتلقّى الخادم اسمك ولا بريدك الإلكتروني ولا رقم هاتفك ولا المعرّف الإعلاني ولا إجاباتك في الدروس. يُستخدم عنوان شبكتك لحظيًا فقط لمنع إساءة الاستخدام ولا يُخزَّن. تُخزَّن الدروس المُنزّلة مشفّرة على هاتفك. وإذا لم تشترك، فلا يتصل التطبيق بخادم الدروس إطلاقًا.</p>
+    <p data-l="en">The server never receives your name, email address, phone number, advertising ID or your answers in lessons. Your network address is used only for a moment to stop abuse and is not stored. Downloaded lessons are stored encrypted on your phone. If you do not subscribe, the app never contacts the lesson server.</p>
     <p data-l="ar">الشراء وإدارة الاشتراك وفتح أي رابط خارجي محمية ببوابة للوالدين، حتى لا يقوم بها الطفل وحده.</p>
     <p data-l="en">Buying, managing a subscription and opening any outside link are protected by a parental gate, so a child cannot do them alone.</p>
   </section>
@@ -273,12 +295,12 @@
     <ul data-l="ar">
       <li><b>الإشعارات</b>: إذا فعّلت التذكير اليومي، يطلب التطبيق إذن الإشعارات ويجدول التذكير على جهازك. لا يُرسَل أي شيء من خادم؛ ويمكنك إيقافه من الإعدادات في أي وقت.</li>
       <li><b>التشغيل بعد إعادة التشغيل</b>: ليبقى التذكير في موعده بعد إعادة تشغيل الهاتف.</li>
-      <li><b>الإنترنت</b>: لإحصاءات الاستخدام وGoogle Play فقط. الدروس وأصواتها كلها داخل التطبيق.</li>
+      <li><b>الإنترنت</b>: لإحصاءات الاستخدام وGoogle Play، وللمشتركين لتنزيل الدروس المميزة من خادم الدروس (القسم ٤).</li>
     </ul>
     <ul data-l="en">
       <li><b>Notifications</b>: if you turn on the daily reminder, the app asks for notification permission and schedules the reminder on your device. Nothing is pushed from a server, and you can turn it off in Settings at any time.</li>
       <li><b>Run at start-up</b>: so the reminder keeps its time after the phone restarts.</li>
-      <li><b>Internet</b>: only for usage statistics and Google Play. All lessons and their audio are inside the app.</li>
+      <li><b>Internet</b>: for usage statistics and Google Play, and for subscribers to download premium lessons from our lesson server (section 4).</li>
     </ul>
     <p data-l="ar">لا يطلب التطبيق الوصول إلى الكاميرا أو الميكروفون أو جهات الاتصال أو الصور أو الموقع.</p>
     <p data-l="en">The app does not ask for the camera, microphone, contacts, photos or location.</p>
@@ -336,16 +358,18 @@
     <p data-l="en">We do not sell, rent or share your data for advertising. The only parties that handle any data from the app are:</p>
     <ul data-l="ar">
       <li><b>Google (Firebase)</b>: معالجة إحصاءات الاستخدام نيابةً عنّا.</li>
-      <li><b>Google Play</b>: الشراء والفوترة وإدارة الاشتراك.</li>
+      <li><b>Google Play</b>: الشراء والفوترة وإدارة الاشتراك، وفحص سلامة الجهاز (Play Integrity) للمشتركين.</li>
+      <li><b>Cloudflare</b>: يستضيف خادم الدروس المميزة نيابةً عنّا (القسم ٤).</li>
       <li><b>الجهات المختصة</b>: فقط إذا ألزمنا القانون بذلك.</li>
     </ul>
     <ul data-l="en">
       <li><b>Google (Firebase)</b>: processes usage statistics on our behalf.</li>
-      <li><b>Google Play</b>: purchases, billing and subscription management.</li>
+      <li><b>Google Play</b>: purchases, billing and subscription management, and the device integrity check (Play Integrity) for subscribers.</li>
+      <li><b>Cloudflare</b>: hosts our premium lesson server on our behalf (section 4).</li>
       <li><b>Authorities</b>: only when the law requires it.</li>
     </ul>
-    <p data-l="ar">قد تُعالَج البيانات على خوادم Google خارج بلدك، مع ضمانات الحماية التي توفّرها Google.</p>
-    <p data-l="en">Data may be processed on Google servers outside your country, under the safeguards Google provides.</p>
+    <p data-l="ar">قد تُعالَج البيانات على خوادم Google أو Cloudflare خارج بلدك، مع ضمانات الحماية التي توفّرها كل منهما.</p>
+    <p data-l="en">Data may be processed on Google or Cloudflare servers outside your country, under the safeguards each provides.</p>
   </section>
 
   <section class="card" id="s10">
@@ -353,12 +377,14 @@
     <ul data-l="ar">
       <li><b>على جهازك</b>: تبقى البيانات حتى تحذفها أو تحذف التطبيق.</li>
       <li><b>إحصاءات الاستخدام</b>: تُحذف بيانات الأحداث المرتبطة بمعرّف نسخة التطبيق تلقائيًا بعد ١٤ شهرًا على الأكثر؛ أما التقارير المجمّعة التي لا تحدّد أحدًا فقد تبقى أطول.</li>
-      <li>الاتصال بخدمات Google مشفّر (HTTPS)، ولا نملك خوادم خاصة تخزّن بياناتك.</li>
+      <li><b>خادم الدروس</b>: تنتهي العدّادات خلال أيام، وتُحفظ الأحداث غير المعتادة (مثل طلب مرفوض) ٣٠ يومًا، وتُحذف كل البيانات المتعلقة بتثبيت أو اشتراك لم يَعُد مستخدمًا بعد ٦ أشهر. يبقى الحظر ما دام ساريًا؛ وفي حالات إساءة الاستخدام المؤكدة (مثل نشر الدروس خارج التطبيق) قد يكون الحظر دائمًا، ولا يُحفظ معه إلا البصمة أو رمز التثبيت. وتُحفظ الملخّصات الأسبوعية، وهي لا تحتوي إلا على البصمات، ضمن سجلات الأمان لدينا.</li>
+      <li>كل الاتصالات بخدمات Google وبخادم الدروس مشفّرة (HTTPS)، ولا يخزّن خادمنا أي بيانات غير المذكورة في القسم ٤.</li>
     </ul>
     <ul data-l="en">
       <li><b>On your device</b>: data stays until you clear it or uninstall the app.</li>
       <li><b>Usage statistics</b>: event data linked to the app-instance identifier is deleted automatically after at most 14 months; aggregated reports that identify no one may be kept longer.</li>
-      <li>Connections to Google services are encrypted (HTTPS), and we run no servers of our own that store your data.</li>
+      <li><b>Lesson server</b>: counters expire within days; unusual events (for example, a refused request) are kept for 30 days; everything about an install or a subscription that is no longer used is deleted after 6 months. A block lasts as long as it is in force; for confirmed abuse (for example, sharing lessons outside the app) a block may be permanent, and only the fingerprint or install code is kept with it. Weekly summaries, which contain only fingerprints, are kept in our security records.</li>
+      <li>All connections to Google services and to our lesson server are encrypted (HTTPS), and our server stores nothing beyond what section 4 describes.</li>
     </ul>
   </section>
 
